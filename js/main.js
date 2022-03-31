@@ -10,7 +10,7 @@ console.log("Clicked");
     const model = inputModel.value
     const problem = textInputProblemEl.value
 
-    window.open(`https://api.whatsapp.com/send?phone=5511960248973&text=Olá, gostaria de solicitar um orçamento. Marca: ${brand}, Modelo: ${model}, Problema: ${problem}`)
+    window.open(`https://api.whatsapp.com/send?phone=5511970866777&text=Olá, gostaria de solicitar um orçamento. Marca: ${brand}, Modelo: ${model}, Problema: ${problem}`)
 })
 
 class App {
