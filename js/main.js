@@ -5,7 +5,7 @@ const textInputProblemEl = document.querySelector('#problem-description');
 
 btnContactEl.addEventListener('click', (event) => {
     event.preventDefault();
-
+console.log("Clicked");
     const brand = inputBrand.value
     const model = inputModel.value
     const problem = textInputProblemEl.value
