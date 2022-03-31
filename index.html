@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Santa Fé Cell</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <div>
+                <p class="logo">Santa Fé Cell</p>
+                <small>Assistência Técnica Especializada</small>
+            </div>
+            <button id="btn-contact">Fale com a gente</button>
+        </section>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Contrate com quem confia!</h1>
+                <p>
+                    Estamos há mais de 10 anos no ramo de reparos de eletrônicos, trabalhamos com as principais
+                    marcas
+                    do mercado.
+                </p>
+            </div>
+            <div class="banner"></div>
+        </section>
+        <section class="list-brands">
+            <h3>Trabalhamos com as principais marcas de eletrônicos</h3>
+
+            <div class="image-wrapper">
+                <img src="./assets/apple.jpg" alt="Card brand">
+                <img src="./assets/motorola.jpg" alt="Card brand">
+                <img src="./assets/samsung.jpg" alt="Card brand">
+                <img width="230" src="./assets/xiaomi.png" alt="Card brand">
+            </div>
+        </section>
+
+        <section class="products">
+            <h3>Fazemos reparos para os aparelhos mais utilizados atualmente</h3>
+
+            <div class="image-wrapper">
+                <div class="card">
+                    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-iphone-nav-202109?wid=200&hei=130&fmt=png-alpha&.v=1630706116000"
+                        alt="Card product">
+                    <p>iPhone</p>
+                </div>
+                <div class="card">
+                    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-ipad-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783381000"
+                        alt="Card product">
+                    <p>iPad</p>
+                </div>
+                <div class="card">
+                    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-watch-nav-202203_GEO_BR?wid=200&hei=130&fmt=png-alpha&.v=1645725726805"
+                        alt="Card product">
+                    <p>Apple Watch</p>
+                </div>
+                <div class="card">
+                    <img width="100"
+                        src="https://images.samsung.com/br/smartphones/galaxy-s22/models/images/galaxy-s22-ultra_models_colors_burgundy.jpg"
+                        alt="Card product">
+                    <p>Galaxy S22</p>
+                </div>
+                <div class="card">
+                    <img width="145"
+                        src="https://i01.appmifile.com/webfile/globalimg/dongxuechun/k9d800blue.png?width=140&height=140"
+                        alt="Card product">
+                    <p>Xiaomi 11 Lite</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h3>Priorizamos sempre a satisfação de nossos clientes</h3>
+            <div class="image-wrapper">
+                <div class="customer-review">
+                    <p class="customer-name">Juliâncio</p>
+                    <div class="star-icon-wrapper">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                    </div>
+                    <p class="customer-message">Muito satisfeito com os serviços e atendimento, nota 10.</p>
+                </div>
+                <div class="customer-review">
+                    
+                    <p class="customer-name">Felipe</p>
+                    <div class="star-icon-wrapper">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                    </div>
+                    <p class="customer-message">Muito bom!</p>
+                </div>
+                <div class="customer-review">
+                    <p class="customer-name">Paula</p>
+                    <div class="star-icon-wrapper">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                    </div>
+                    <p class="customer-message">Meu celular ficou novo de novo, parabéns.</p>
+                </div>
+                <div class="customer-review">
+                    <p class="customer-name">Maria Eduarda</p>
+                    <div class="star-icon-wrapper">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                        <img src="./assets/icons8-star-32.png" alt="Icon star">
+                    </div>
+                    <p class="customer-message">Serviço de qualidade e por um bom preço.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="location">
+            <h3>Nossa localização</h3>
+            <div id="map"></div>
+        </section>
+
+        <section class="contact">
+            <h3>Faça agora mesmo o seu orçamento pelo WhatsApp</h3>
+
+            <form>
+                <input id="brand-phone" type="text" placeholder="Marca">
+                <input id="model-phone" type="text" placeholder="Modelo">
+                <input id="problem-description" placeholder="Qual é o problema?">
+                <button type="submit" id="btn-contact">Solicitar orçamento</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div class="container-footer">
+            <div class="logo-wrapper">
+                <p class="logo">Santa Fé Cell</p>
+                <small><strong>Assistência Técnica Especializada.</strong></small>
+                <small>Estamos há mais de 10 anos no ramo de reparos de eletrônicos, trabalhamos com as principais
+                    marcas do mercado.
+                </small>
+            </div>
+            <div class="social-media">
+                <p>Redes sociais</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img width="32" src="./assets/icons8-instagram-48.png" alt="Icon Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

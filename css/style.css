@@ -1,0 +1,244 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 527px;
+    width: 100%;
+}
+
+button, input, select {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+select, input {
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    height: 50px;
+}
+
+selct option {
+    height: 50px;
+}
+
+button {
+    background-color: #42c8b7;
+    color: #fff;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 25px 1rem;
+}
+
+button:hover {
+    background-color: #1ee2c8;
+    transition: background-color 0.5s ease-in-out;
+}
+
+input {
+    font-size: 14px;
+    margin: 10px 1rem;
+}
+
+footer {
+    background-color: #FAFAFB;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+}
+
+footer .logo-wrapper {
+    max-width: 250px;
+}
+
+footer .social-media p {
+    margin: 0;
+}
+
+section h3 {
+    font-size: 22px;
+}
+
+.container-footer {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#map { 
+    height: 420px; 
+    width: 100%;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 0px 15px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header button {
+    width: 130px;
+    height: 40px;
+    font-size: 12px;
+    padding: 0;
+}
+
+.logo {
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.list-brands {
+  margin: 10rem 0 20px 0;  
+}
+
+.list-brands  h3 {
+    margin: 0;
+}
+
+
+.image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.image-wrapper img {
+    margin: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.8rem;
+}
+
+.hero {
+    margin: 5rem 15px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    justify-content: space-between;
+}
+
+.hero .banner {
+    background-image: url('../assets/istockphoto-1125323600-612x612.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    border-radius: 5rem;
+}
+
+.hero .hero-content {
+    max-width: 550px;
+}
+
+.hero-content h1 {
+    font-size: 44px;
+}
+
+.hero-content p {
+    font-size: 22px;
+}
+
+.location {
+    margin: 90px 0 150px 0;
+}
+
+.reviews {
+    margin: 90px 0;
+}
+
+.customer-review  {
+    max-width: 220px;
+    min-width: 220px;
+    min-height: 223px;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 3%), 0 4px 4px 0 rgb(0 0 0 / 3%), 0 8px 8px 0 rgb(0 0 0 / 3%);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.customer-name {
+    font-weight: bold;
+}
+
+.customer-message {
+    font-style: italic;
+}
+
+.customer-review .img-customer-image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.customer-review .star-icon-wrapper img {
+    width: 18px;
+    margin: 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem 0;
+}
+
+@media only screen and (max-width: 1124px) {
+    .image-wrapper {
+        justify-content: center;
+    }
+
+    section h3 {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .hero .banner {
+        display: none;
+    }
+
+    .container-footer {
+        flex-direction: column;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .header {
+        justify-content: center;
+    }
+}
